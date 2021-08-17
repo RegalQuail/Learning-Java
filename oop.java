@@ -21,12 +21,18 @@ class oop {
             return b;
         }
     }
+    // Has a parameter
+    static void whoIsDumbass(String name) {
+        System.out.println("That person is a dumbass: " + name);
+    }
+
     public static void main(String[] args) {
         returnFive();
         sayHello();
         sayHelloTo("Jonah");
         int result = max(7, 42);
         System.out.println(result);
+        whoIsDumbass("Thomas");
     }
     
 }
