@@ -1,5 +1,8 @@
+import samples.*; // * = imports all classes in the samples package
+
 class MyClass {
     
+    public static final double PI = 3.14; // final keyword = cannot be reassigned a value
     public static void main(String[] args) {
         
         Animal dog = new Animal();
@@ -14,6 +17,8 @@ class MyClass {
         Counter c1 = new Counter();
         Counter c2 = new Counter();
         System.out.println(Counter.COUNT);
+
+        System.out.println(PI);
     }
 
 }

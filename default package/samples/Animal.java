@@ -1,5 +1,7 @@
+package samples;
+
 public class Animal {
-    void bark() {
+    public void bark() {
         System.out.println("Woof-Woof");
     }
 }

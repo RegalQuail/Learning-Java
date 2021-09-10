@@ -1,3 +1,5 @@
+package samples;
+
 public class Vehicle {
 
     int maxSpeed;
@@ -5,7 +7,7 @@ public class Vehicle {
     String colour;
     Double fuelCapacity;
 
-    void horn() {
+    public void horn() {
         System.out.println("Beep !");
     }
 
@@ -21,7 +23,7 @@ public class Vehicle {
         this.color = c;
     }
 
-    Vehicle() {
+    public Vehicle() {
         this.setColor("Red");
     }
 
