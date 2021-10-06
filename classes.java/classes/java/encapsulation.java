@@ -1,6 +1,6 @@
 
 class BankAccount {
-    private double balance = 0; // private hides the balance variable
+    private double balance = 0; // "private" hides the balance variable
     public void deposit(double x) { // enabling access to it through the "deposit" method
         if (x > 0) {
             balance += x;
