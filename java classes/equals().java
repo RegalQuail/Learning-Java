@@ -9,8 +9,8 @@ class Animal {
         name = n;
     }
 
-// Right on the class, go to Source -> Generate hashCode() and equals()...
-// This will automatically creat the necessary methods
+// Right click on the class, go to Source -> Generate hashCode() and equals()...
+// This will automatically create the necessary methods
 
     @Override
     public int hashCode() {
