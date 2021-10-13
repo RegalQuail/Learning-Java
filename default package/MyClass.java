@@ -14,8 +14,6 @@ class MyClass {
         System.out.println(v1.getColor());
         v2.horn();
 
-        Counter c1 = new Counter();
-        Counter c2 = new Counter();
         System.out.println(Counter.COUNT);
 
         System.out.println(PI);

@@ -9,10 +9,10 @@ class Animal {
     public static void main(String[] args) {
         Animal a = new Cat();
         Animal b = new Dog();
-// We've created two reference variables of type Animal, and pointed them to the Cat and Dog objects.
-// Now, we can call the makeSound() methods.    
-        a.makeSound(); // the reference variable a has a Dog object, the makeSound() method of the Dog class can be called.
-        b.makeSound(); // the same applies for variable b
+// Two reference variables of type Animal have been created, and pointed to the Cat and Dog objects.
+// Now, the makeSound() methods can be called.    
+        a.makeSound(); // the reference variable "a" has a Dog object, the makeSound() method of the Dog class can be called.
+        b.makeSound(); // the same applies for variable "b"
     }
 }
 // inherits from the Animal class + has its own implementation of the makeSound() method
