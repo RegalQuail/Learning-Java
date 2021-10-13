@@ -1,10 +1,10 @@
 /*
 An interface is a completely abstract class that contains only abstract methods.
 Some specifications for interfaces:
-    - Defined using the interface keyword.
-    - May contain only static final variables.
-    - Cannot contain a constructor because interfaces cannot be instantiated.
-    - Interfaces can extend other interfaces.
+    - Defined using the interface keyword,
+    - May contain only static final variables,
+    - Cannot contain a constructor because interfaces cannot be instantiated,
+    - Interfaces can extend other interfaces,
     - A class can implement any number of interfaces.
 */
 interface Animal {
@@ -16,7 +16,7 @@ class Cat implements Animal { // Use the "implements" keyword to use an interfac
     public void makesound() {
         System.out.println("Meow");
     }
-    public void eat() { // when implemtenting an interface, all of its methods must be overriden
+    public void eat() { // when implementing an interface, all of its methods must be overriden
         System.out.println("nomnomnom");
     }
 }
