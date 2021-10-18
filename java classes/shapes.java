@@ -23,25 +23,35 @@ import java.util.Scanner;
 abstract class Shape {
     int width;
     abstract void area();
+    int widthSquare;
+    double widthCircle;
 }
 // The code goes here
 class Square extends Shape {
 
-    @Override
+    public Square(int width) {
+        this.width = width;
+    }
+
     void area() {
-        
+        int widthSquare = width * width;
+        System.out.println(widthSquare);
     }
     
 }
 
 class Circle extends Shape {
-    @Override
-    void area() {
 
+    public Circle(int width) {
+        this.width = width;
+    }
+    void area() {
+        double widthCircle = Math.PI * width * width;
+        System.out.println(widthCircle);
     }
 }
 
-public class Program {
+public class shapes {
     public static void main(String[ ] args) {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
