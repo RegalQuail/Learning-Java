@@ -18,8 +18,8 @@ class Dog extends Animal { // the Dog class inherits the legs variable from the 
 class MyClass {
     public static void main(String[] args) {
         Dog dog = new Dog();
-        dog.eat();
-        dog.makeSound();
+        dog.eat(); // The animal eats.
+        dog.makeSound(); // Hi !
     }
 }
 // Private methods are not inherited from the super class

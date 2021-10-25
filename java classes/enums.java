@@ -10,7 +10,7 @@ class enums {
         RED, BLUE, GREEN;
     }
     public static void main(String[] args) {
-        // They canbe reffered to using the "dot" syntax.
+        // They can be reffered to using the "dot" syntax.
         Rank a = Rank.SOLDIER;
         
         // It is possible to check for the corresponding values in an "enum".
