@@ -11,7 +11,7 @@
 // How to create and use a linked list:
 import java.util.*;
 
-public class linked_lists {
+class linked_lists {
     public static void main(String[] args) {
     // Creating an object of the class LinkedList:
     LinkedList<String> ll = new LinkedList<>();
