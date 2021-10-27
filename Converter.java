@@ -15,5 +15,7 @@ class Converter {
         Scanner sc = new Scanner(System.in);
         int x = sc.nextInt();
         System.out.println(Converter.toBinary(x));
+
+        sc.close();
     }
 }

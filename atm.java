@@ -4,7 +4,9 @@ public class atm {
     
     public static void main(String[] args) {
 
-        int balance = 10000, withdraw, deposit;
+        int balance = 10000;
+        int withdraw;
+        int deposit;
         Scanner sc = new Scanner(System.in);
 
         while (true) {
@@ -56,10 +58,9 @@ public class atm {
 
                 case 4: System.exit(0);
 
+            sc.close();
             }
 
         }
-
     }
-
 }

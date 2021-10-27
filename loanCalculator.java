@@ -1,7 +1,3 @@
-/*
-    
-*/
-
 import java.util.Scanner;
 
 public class loanCalculator {
@@ -14,5 +10,7 @@ public class loanCalculator {
             amount -= payment;
         }
         System.out.println(amount);
+
+        scanner.close();
     }
 }
