@@ -18,18 +18,32 @@ import java.util.LinkedList;
 import java.util.Iterator;
 
 class iterators {
-  public static void main(String[] args) {
-    LinkedList<String> animals = new LinkedList<>();
+    public static void main(String[] args) {
 
-    animals.add("Fox");
-    animals.add("Cat");
-    animals.add("Dog");
-    animals.add("Rabbit");
+        LinkedList<String> animals = new LinkedList<>();
+        animals.add("Fox");
+        animals.add("Cat");
+        animals.add("Dog");
+        animals.add("Rabbit");
 
-    Iterator<String> it = animals.iterator();
-    String value = it.next();
-    System.out.println(value); // Fox
-  }
+        Iterator<String> it = animals.iterator();
+        String valueOne = it.next();
+        System.out.println(valueOne); // Fox
+
+        // Typically, iterators are used in loops. At each iteration,
+        // the corresponding list element can be accessed. 
+        while(it.hasNext()) {
+            String value = it.next();
+            System.out.println(value);
+            /*
+                Fox
+                Cat
+                Dog
+                Rabbit
+            */
+        }
+
+    }
 }
 /*
   it.next() returns the first element in the list
