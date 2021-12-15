@@ -17,9 +17,9 @@ You are creating a bowling game!
 
 import java.util.*; 
 
-class Bowling {
+class bowling {
     HashMap<String, Integer> players;
-    Bowling() {
+    bowling() {
         players = new HashMap<>();
     }
     public void addPlayer(String name, int p) {
@@ -27,16 +27,31 @@ class Bowling {
     }
     //your code goes here
     public void getWinner() {
-        
+
+        String bestPlayer = "";
+        Iterator<Map.Entry<String, Integer>> it = players.entrySet().iterator();
+        int max = 0;
+
+        while (it.hasNext()) {
+
+            String playerName = it.next().getKey();
+            int checkValue = players.get(playerName);
+
+            if (checkValue >= max) {
+                max = checkValue;
+                bestPlayer = playerName;
+            }
+        }
+        System.out.println(bestPlayer);
     }
 }
 
 class Program {
-    public static void main(String[ ] args) {
-        Bowling game = new Bowling();
+    public static void main(String[] args) {
+        bowling game = new bowling();
         Scanner sc = new Scanner(System.in);
 
-        for(int i = 0; i < 3; i++) {
+        for (int i = 0; i < 3; i++) {
             String input = sc.nextLine();
             String[] values = input.split(" ");
             String name = values[0];
